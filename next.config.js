@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const withTM = require("next-transpile-modules")([
+  "@ericz1803/react-google-calendar"
+]);
 
-module.exports = nextConfig
+module.exports = withTM({
+  // your custom config goes here
+});
