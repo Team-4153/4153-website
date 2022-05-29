@@ -46,7 +46,7 @@ export default function ServerErrorTitle() {
   
   return (
     <div>
-      <SiteHeader links={[{link:'/about',label:'About'}, {link:'/calendar',label:'events'}]}/>
+      <SiteHeader/>
       <Container className={classes.root}>
         <div className={classes.label}>500</div>
         <Title className={classes.title}>Uh Oh</Title>
@@ -54,9 +54,11 @@ export default function ServerErrorTitle() {
           It appears our website may have met the same fate as our climber. Try again later or <Link href={'/'}>return to our Home page</Link>
         </Text>
         <Group position="center">
-          <Button variant="subtle" size="md">
-            Take me back to home page
-          </Button>
+          <Link href='/'>
+            <Button variant="subtle" size="md">
+              Take me back to home page
+            </Button>
+          </Link>
         </Group>
       </Container>
     </div>
