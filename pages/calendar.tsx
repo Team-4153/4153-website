@@ -1,13 +1,15 @@
 import SiteHeader from "../components/Header";
 import SiteFooter from "../components/Footer";
+import SiteCalendar from "../components/Calendar";
 import Head from "next/head";
 
-export default function About() {
-  return (
+
+export default function Calendar(args: { gKey: any; }){
+  return(
     <div>
       <Head>
-        <title>Project Y - About</title>
-        <meta name="description" content="FIRST Team 4153 Project Y" />
+        <title>Project Y - Calendar</title>
+        <meta name="description" content="Project Y Event Calendar" />
         <link rel="icon" href="/globe_notext.png" />
         <script
           async
@@ -27,8 +29,22 @@ export default function About() {
         />
       </Head>
       <SiteHeader/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores culpa deserunt eius laboriosam officiis? Facilis ipsam odit quibusdam voluptas. Alias animi, consequatur consequuntur ex fuga obcaecati odio ratione suscipit voluptas.</p>
+      <div className="w-full flex justify-center items-center">
+        <div className="w-[60%] object-center"><SiteCalendar gKey={args.gKey}/></div>
+      </div>
       <SiteFooter/>
     </div>
   )
+}
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts
+  const gKey = process.env.KEY
+  
+  // By returning { props: { posts } }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      gKey,
+    },
+  }
 }

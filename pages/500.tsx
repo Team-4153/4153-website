@@ -2,6 +2,7 @@ import React from 'react';
 import { createStyles, Title, Text, Button, Container, Group } from '@mantine/core';
 import Link from "next/link";
 import SiteHeader from "../components/Header";
+import Head from "next/head";
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -46,17 +47,40 @@ export default function ServerErrorTitle() {
   
   return (
     <div>
-      <SiteHeader links={[{link:'/about',label:'About'}, {link:'/calendar',label:'events'}]}/>
+      <Head>
+        <title>500</title>
+        <meta name="description" content="Internal Server Error" />
+        <link rel="icon" href="/globe_notext.png" />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-YYB5P642PC}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YYB5P642PC', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
+      </Head>
+      <SiteHeader/>
       <Container className={classes.root}>
         <div className={classes.label}>500</div>
         <Title className={classes.title}>Uh Oh</Title>
         <Text color="dimmed" size="lg" align="center" className={classes.description}>
-          It appears our website may have met the same fate as our climber. Try again later or <Link href={'/'}>return to our Home page</Link>
+          It appears our website may have met the same fate as our climber. Try again later or return to our Home page.
         </Text>
         <Group position="center">
-          <Button variant="subtle" size="md">
-            Take me back to home page
-          </Button>
+          <Link href='/'>
+            <Button variant="subtle" size="md">
+              Take me back to home page
+            </Button>
+          </Link>
         </Group>
       </Container>
     </div>
