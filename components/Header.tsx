@@ -11,6 +11,7 @@ import {
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Link from "next/link";
+import Image from "next/image";
 
 const solutions = [
   {
@@ -57,11 +58,7 @@ export default function SiteHeader() {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Workflow</span>
-              <img
-                className="h-8 w-auto sm:h-10"
-                src="/logo.png"
-                alt=""
-              />
+              <Image src="/globe_notext.png" alt="team logo" height={48} width={48}/>
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
