@@ -120,7 +120,7 @@ export default function SiteHeader() {
               )}
             </Popover>
             <Link href="/calendar"><a className="text-base font-medium text-gray-500 hover:text-gray-900">Calendar</a></Link>
-            <a href="https://www.firstinspires.org/robotics/frc" target="_blank" className="text-base font-medium text-gray-500 hover:text-gray-900">FIRST Program Info</a>
+            <Link href="https://www.firstinspires.org/robotics/frc" target="_blank" className="text-base font-medium text-gray-500 hover:text-gray-900">FIRST Program Info</Link>
             <Popover className="relative">
               {({ open }) => (
                 <>
