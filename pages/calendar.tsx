@@ -1,7 +1,9 @@
 import SiteHeader from "../components/Header";
 import SiteFooter from "../components/Footer";
+import SiteCalendar from "../components/Calendar";
 
-export default function SiteCalendar(args: { gKey: any; }){
+
+export default function Calendar(args: { gKey: any; }){
   return(
     <div>
       <SiteHeader/>
