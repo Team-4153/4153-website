@@ -1,10 +1,10 @@
 import React from 'react';
-import Link from "next/link";
+import Link from "next/link";;
 
 
 export default function SiteFooter() {
   return (
-   <footer className="w-full max-w-container mx-auto border-t py-10 text-center text-sm text-gray-500 sm:flex sm:items-center sm:justify-center">
+   <footer className="w-full max-w-container mx-auto border-t border-gray-400 py-10 text-center text-sm text-gray-500 sm:flex sm:items-center sm:justify-center">
      <p>
        ©2022 Minhtet Htoon
      </p>

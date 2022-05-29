@@ -1,13 +1,14 @@
+import Head from "next/head";
+import SiteCalendar from "../components/Calendar";
 import SiteHeader from "../components/Header";
 import SiteFooter from "../components/Footer";
-import Head from "next/head";
 
-export default function About() {
-  return (
+export default function Outreach() {
+  return(
     <div>
       <Head>
-        <title>Project Y - About</title>
-        <meta name="description" content="FIRST Team 4153 Project Y" />
+        <title>Project Y - Press Kit</title>
+        <meta name="description" content="Project Y Press Kit" />
         <link rel="icon" href="/globe_notext.png" />
         <script
           async
@@ -29,7 +30,14 @@ export default function About() {
       <div className="sticky z-50 top-0">
         <SiteHeader/>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores culpa deserunt eius laboriosam officiis? Facilis ipsam odit quibusdam voluptas. Alias animi, consequatur consequuntur ex fuga obcaecati odio ratione suscipit voluptas.</p>
+      <div className="w-full bottom-2 flex flex-col justify-center items-center">
+        <div className="lg:text-center py-6">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            Press Kit PDF
+          </p>
+          
+        </div>
+      </div>
       <SiteFooter/>
     </div>
   )
