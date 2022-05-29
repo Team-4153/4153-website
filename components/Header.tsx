@@ -4,18 +4,13 @@ import { Popover, Transition } from '@headlessui/react'
 import {
   BookmarkAltIcon,
   CalendarIcon,
-  ChartBarIcon,
   CursorClickIcon,
   MenuIcon,
-  PhoneIcon,
-  PlayIcon,
-  ShieldCheckIcon,
-  SupportIcon,
-  ViewGridIcon,
   XIcon,
   SpeakerphoneIcon, UserGroupIcon, NewspaperIcon
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import Link from "next/link";
 
 const solutions = [
   {
@@ -23,12 +18,6 @@ const solutions = [
     description: "Read about some of us",
     href: '#',
     icon: UserGroupIcon
-  },
-  {
-    name: 'Events',
-    description: 'See what meet-ups and other events we might be planning near you.',
-    href: '#',
-    icon: CalendarIcon,
   },
   {
     name: 'Past Robots',
@@ -44,12 +33,6 @@ const solutions = [
   },
 ]
 const resources = [
-  {
-    name: 'FIRST Program Information',
-    description: 'Information about FIRST programs',
-    href: '#',
-    icon: SupportIcon,
-  },
   {
     name: 'Guides',
     description: 'Learn how to do something',
@@ -76,7 +59,7 @@ export default function SiteHeader() {
               <span className="sr-only">Workflow</span>
               <img
                 className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                src="/logo.png"
                 alt=""
               />
             </a>
@@ -139,6 +122,8 @@ export default function SiteHeader() {
                 </>
               )}
             </Popover>
+            <Link href="/calendar"><a className="text-base font-medium text-gray-500 hover:text-gray-900">Calendar</a></Link>
+            <Link href="https://www.firstinspires.org/robotics/frc"><a className="text-base font-medium text-gray-500 hover:text-gray-900">FIRST Program Info</a></Link>
             <Popover className="relative">
               {({ open }) => (
                 <>
