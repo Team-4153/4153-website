@@ -13,7 +13,7 @@ console.log(args.gKey)
       <Head>
         <title>Project Y</title>
         <meta name="description" content="FIRST Team 4153 Project Y" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/globe_notext.png" />
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-YYB5P642PC}`}
