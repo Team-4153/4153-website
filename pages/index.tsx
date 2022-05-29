@@ -38,15 +38,23 @@ console.log(args.gKey)
         </div>
         <Landing/>
         <Sponsors/>
-        <div className="w-full bottom-2 flex justify-center items-center">
-          <div className="w-[60%] object-center"><SiteCalendar gKey={args.gKey}/></div>
+        <hr/>
+        <div className="w-full bottom-2 flex flex-col justify-center items-center">
+          <div className="lg:text-center py-6">
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Event Calendar
+            </p>
+          </div>
+          <div className="w-[60%]">
+            <SiteCalendar gKey={args.gKey}/>
+          </div>
         </div>
-        <div className="h-4 w-full"></div>
+        <div className="h-4 w-full">
+        </div>
       </main>
       <div className="top-4 text-center">
         <SiteFooter/>
       </div>
-      
     </div>
   )
 }

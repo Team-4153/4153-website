@@ -3,15 +3,18 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
   BookmarkAltIcon,
-  CalendarIcon,
   CursorClickIcon,
   MenuIcon,
   XIcon,
-  SpeakerphoneIcon, UserGroupIcon, NewspaperIcon
+  SpeakerphoneIcon, UserGroupIcon, NewspaperIcon, QuestionMarkCircleIcon
 } from '@heroicons/react/outline'
+import {School, Users} from "tabler-icons-react";
+
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Link from "next/link";
 import Image from "next/image";
+import GithubCorner from "react-github-corner";
+
 
 const solutions = [
   {
@@ -44,6 +47,24 @@ const resources = [
     description: 'Want to write about us, click here',
     href: '/', icon: NewspaperIcon
   },
+  {
+    name:"FAQs",
+    description: "Questions about our team, FRC and FIRST",
+    href: "/faq",
+    icon: QuestionMarkCircleIcon
+  },
+  {
+    name: "For Students",
+    description: "Important information for students",
+    href:'/students',
+    icon:School
+  },
+  {
+    name:"For Parents",
+    description: "Information for parents",
+    href:'/parents',
+    icon:Users
+  }
 ]
 
 function classNames(...classes: string[]) {
@@ -57,11 +78,15 @@ export default function SiteHeader() {
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
-              <Image src="/globe_notext.png" alt="team logo" height={48} width={48}/>
+              <div>
+                <a href="#">
+                  <Image src="/globe_notext.png" alt="team logo" height={48} width={48}/>
+                </a>
+              </div>
             </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-400">
+            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-400">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -73,7 +98,7 @@ export default function SiteHeader() {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400'
+                      'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400'
                     )}
                   >
                     <span>About</span>
@@ -104,7 +129,7 @@ export default function SiteHeader() {
                               href={item.href}
                               className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                             >
-                              <item.icon className="flex-shrink-0 h-6 w-6 text-teal-400" aria-hidden="true" />
+                              <item.icon className="flex-shrink-0 h-6 w-6 text-sky-400" aria-hidden="true" />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -119,14 +144,14 @@ export default function SiteHeader() {
               )}
             </Popover>
             <Link href="/calendar"><a className="text-base font-medium text-gray-500 hover:text-gray-900">Calendar</a></Link>
-            <Link href="https://www.firstinspires.org/robotics/frc" className="text-base font-medium text-gray-500 hover:text-gray-900">FIRST Program Info</Link>
+            <Link href="https://www.firstinspires.org/robotics/frc"><a className="text-base font-medium text-gray-500 hover:text-gray-900">FIRST Program Info</a></Link>
             <Popover className="relative">
               {({ open }) => (
                 <>
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400'
+                      'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400'
                     )}
                   >
                     <span>Resources</span>
@@ -157,7 +182,7 @@ export default function SiteHeader() {
                               href={item.href}
                               className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                             >
-                              <item.icon className="flex-shrink-0 h-6 w-6 text-teal-400" aria-hidden="true" />
+                              <item.icon className="flex-shrink-0 h-6 w-6 text-sky-400" aria-hidden="true" />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -193,12 +218,12 @@ export default function SiteHeader() {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-teal-400.svg"
+                    src="https://tailwindui.com/img/logos/workflow-mark-sky-400.svg"
                     alt="Workflow"
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-400">
+                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-400">
                     <span className="sr-only">Close menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -212,7 +237,7 @@ export default function SiteHeader() {
                       href={item.href}
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
-                      <item.icon className="flex-shrink-0 h-6 w-6 text-teal-400" aria-hidden="true" />
+                      <item.icon className="flex-shrink-0 h-6 w-6 text-sky-400" aria-hidden="true" />
                       <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
                     </a>
                   ))}
@@ -241,13 +266,13 @@ export default function SiteHeader() {
               <div>
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-teal-400 hover:bg-indigo-700"
+                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-400 hover:bg-indigo-700"
                 >
                   Sign up
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
-                  <a href="#" className="text-teal-400 hover:text-teal-400">
+                  <a href="#" className="text-sky-400 hover:text-sky-400">
                     Sign in
                   </a>
                 </p>
@@ -256,6 +281,12 @@ export default function SiteHeader() {
           </div>
         </Popover.Panel>
       </Transition>
+      <GithubCorner
+        bannerColor="#0ea5e9"
+        octoColor="#fff"
+        size="100"
+        href="https://github.com/minhtet-htoon/4153-website"
+      />
     </Popover>
   )
 }
