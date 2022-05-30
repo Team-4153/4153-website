@@ -99,28 +99,7 @@ export function FaqSimple() {
 export default function Faq() {
   return(
     <div className="bg-gradient-to-br min-h-screen from-white to-sky-50">
-      <Head>
-        <title>Project Y - FAQ</title>
-        <meta name="description" content="FIRST Team 4153 Project Y" />
-        <link rel="icon" href="/globe_notext.png" />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-YYB5P642PC}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-YYB5P642PC', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
-      </Head>
-      <SiteHeader/>
+      <SiteHeader title="FAQ" description="Frequently asked questions about the team, FRC, and FIRST"/>
       <FaqSimple/>
       <SiteFooter/>
     </div>

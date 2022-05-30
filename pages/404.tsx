@@ -47,28 +47,7 @@ export default function NotFoundTitle() {
   
   return (
     <div>
-      <Head>
-        <title>404</title>
-        <meta name="description" content="Resource not found" />
-        <link rel="icon" href="/globe_notext.png" />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-YYB5P642PC}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-YYB5P642PC', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
-      </Head>
-      <SiteHeader/>
+      <SiteHeader title="404" description="Resource not found"/>
       <Container className={classes.root}>
         <div className={classes.label}>404</div>
         <Title className={classes.title}>You have found a secret place.</Title>

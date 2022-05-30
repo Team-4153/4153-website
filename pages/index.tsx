@@ -11,32 +11,10 @@ import {StatsGroup} from "./outreach";
 export default function Home(args: { gKey: any; }) {
 console.log(args.gKey)
   return (
-    <div className="bg-gradient-to-bl from-white to-sky-50">
-      <Head>
-        <title>Project Y</title>
-        <meta name="description" content="FIRST Team 4153 Project Y" />
-        <link rel="icon" href="/globe_notext.png" />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-YYB5P642PC}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-YYB5P642PC', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
-      </Head>
-
+    <div className="bg-gradient-to-bl from-white to-blue-100 via-sky-50">
       <main className="divide-y divide-gray-400">
         <div className="sticky z-50 top-0">
-          <SiteHeader/>
+          <SiteHeader title='Home' description="FRC Team 4153 Project Y Home Page"/>
         </div>
         <Landing/>
         <div className="py-12">
@@ -67,7 +45,7 @@ console.log(args.gKey)
                     },
                     {
                       stats:"500+",
-                      title:"Of Lives Changed",
+                      title:"Lives Changed",
                       description:""
                     }
                   ]

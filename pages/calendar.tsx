@@ -9,29 +9,8 @@ import React from "react";
 export default function Calendar(args: { gKey: any; }){
   return(
     <div className="bg-gradient-to-br min-h-screen from-white to-sky-50">
-      <Head>
-        <title>Project Y - Calendar</title>
-        <meta name="description" content="Project Y Event Calendar" />
-        <link rel="icon" href="/globe_notext.png" />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-YYB5P642PC}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-YYB5P642PC', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
-      </Head>
       <div className="sticky z-50 top-0">
-        <SiteHeader/>
+        <SiteHeader title="Calendar" description="Team 4153's event calendar"/>
       </div>
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

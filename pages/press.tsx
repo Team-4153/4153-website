@@ -28,7 +28,7 @@ export default function Outreach() {
         />
       </Head>
       <div className="sticky z-50 top-0">
-        <SiteHeader/>
+        <SiteHeader title="Press Kit" description="Team 4153's press relations page"/>
       </div>
       <div className="w-full bottom-2 flex flex-col justify-center items-center">
         <div className="lg:text-center py-6">
