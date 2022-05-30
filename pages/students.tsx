@@ -1,6 +1,6 @@
 import SiteHeader from "../components/Header";
 import React from "react";
-import {Container, SimpleGrid, Text} from "@mantine/core";
+import {Container, SimpleGrid} from "@mantine/core";
 import {Feature, FeatureProps} from "./about";
 import {Browser, BuildingCommunity, Plane, School, Tool, Users} from "tabler-icons-react";
 import SiteFooter from "../components/Footer";
@@ -48,9 +48,9 @@ const activities:FeatureProps[]=[
 
 export default function Students() {
   return(
-    <div className="min-h-screen bg-gradient-to-br from-white to-sky-100">
+    <div className="min-h-screen bg-gradient-to-br from-white to-sky-50">
       <div className="sticky z-50 top-0">
-        <SiteHeader title="Students" description="Project Y Studetn Section"/>
+        <SiteHeader title="Students" description="Project Y Student Section"/>
       </div>
       <div className="divide-y-2">
         <div className="py-12">

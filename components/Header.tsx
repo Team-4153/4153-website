@@ -108,7 +108,7 @@ export default function SiteHeader(props:IHeaderProps) {
               <Link href="/">
                 <div>
                   <a href="">
-                    <Image src="/y_notext.png" alt="team logo" height={48} width={48}/>
+                    <Image src="/favicon.png" alt="team logo" height={48} width={48}/>
                   </a>
                 </div>
               </Link>
