@@ -1,10 +1,8 @@
-import Head from "next/head";
 import SiteHeader from "../components/Header";
 import SiteFooter from "../components/Footer";
 import {BrandDiscord, BrandTwitch, BrandYoutube, Calendar} from "tabler-icons-react";
 import React from "react";
 import { createStyles, Text } from '@mantine/core';
-import Image from "next/image";
 
 
 const programs =

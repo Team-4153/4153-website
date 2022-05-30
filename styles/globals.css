@@ -17,3 +17,32 @@ a {
 * {
   box-sizing: border-box;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  opacity: 0;
+}
+::-webkit-scrollbar:hover {
+  width: 10px;
+  opacity: 1;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+  opacity: inherit;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5eead4;
+  border-radius: 20px;
+  opacity: inherit;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2dd4bf;
+  opacity: inherit;
+}

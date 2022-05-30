@@ -39,9 +39,9 @@ const solutions = [
 ]
 const resources = [
   {
-    name: 'Guides',
-    description: 'Learn how to do something',
-    href: '/',
+    name: 'Guides & Reference',
+    description: "Need something? It\'s probably here",
+    href: '/reference',
     icon: BookmarkAltIcon,
   },
   { name: 'Press Kit',
@@ -56,7 +56,7 @@ const resources = [
   },
   {
     name: "For Students",
-    description: "Important information for students",
+    description: "Information for students",
     href:'/students',
     icon:School
   },
@@ -83,7 +83,7 @@ export default function SiteHeader(props:IHeaderProps) {
       <Head>
         <title>Project Y - {props.title}</title>
         <meta name="description" content={props.description} />
-        <link rel="icon" href="/y_notext.png" />
+        <link rel="icon" href="/favicon.png" />
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-YYB5P642PC}`}
@@ -101,13 +101,13 @@ export default function SiteHeader(props:IHeaderProps) {
           }}
         />
       </Head>
-      <Popover className="relative bg-white">
+      <Popover className="shadow-md relative bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <Link href="/">
                 <div>
-                  <a href="#">
+                  <a href="">
                     <Image src="/y_notext.png" alt="team logo" height={48} width={48}/>
                   </a>
                 </div>
@@ -312,7 +312,7 @@ export default function SiteHeader(props:IHeaderProps) {
         <GithubCorner
           bannerColor="#0ea5e9"
           octoColor="#fff"
-          size="100"
+          size="102"
           href="https://github.com/minhtet-htoon/4153-website"
         />
       </Popover>
