@@ -10,17 +10,17 @@ const benefits:FeatureProps[]=[
   {
     icon:School,
     title:"Learn",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description:"A comprehensive set of skills that prepare you for the unique engineering challenges of today and tomorrow."
   },
   {
     icon:Users,
     title:"Belong",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description:"To a global community of engineers, entrepreneurs, scientists, and leaders"
   },
   {
     icon:Plane,
     title:"Travel & Compete",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description:"With a world-class team for numerous state and international titles while forming connections"
   }
 ]
 const activities:FeatureProps[]=[
@@ -48,7 +48,7 @@ const activities:FeatureProps[]=[
 
 export default function Students() {
   return(
-    <div className="min-h-screen bg-gradient-to-br from-white to-sky-50">
+    <div className="min-h-screen bg-gradient-to-br from-white to-primary-50">
       <div className="sticky z-50 top-0">
         <SiteHeader title="Students" description="Project Y Student Section"/>
       </div>
@@ -56,7 +56,7 @@ export default function Students() {
         <div className="py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="lg:text-center pb-6">
-              <h2 className="text-base text-sky-600 font-semibold tracking-wide uppercase">Question</h2>
+              <h2 className="text-base text-primary-500 font-semibold tracking-wide uppercase">Question</h2>
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 Why FIRST&reg;?
               </p>
@@ -71,7 +71,7 @@ export default function Students() {
         <div className="py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="lg:text-center pb-6">
-              <h2 className="text-base text-sky-600 font-semibold tracking-wide uppercase">More than Robots</h2>
+              <h2 className="text-base text-primary-500 font-semibold tracking-wide uppercase">More than Robots</h2>
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 What We Do
               </p>
@@ -81,7 +81,7 @@ export default function Students() {
                 {activities.map((program) => (
                   <div key={program.title} className="relative">
                     <dt>
-                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
+                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
                         <program.icon className="h-6 w-6" aria-hidden="true" />
                       </div>
                       <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{program.title}</p>
@@ -97,14 +97,14 @@ export default function Students() {
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               <span className="block">Ready to Join?</span>
-              <span className="block text-sky-400">Come and talk with us</span>
+              <span className="block text-primary-400">Come and talk with us</span>
             </h2>
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div className="inline-flex rounded-md shadow">
                 <Link
                   href="/calendar"
                 >
-                  <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-400 hover:bg-sky-500">
+                  <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-400 hover:bg-primary-500">
                     Find a Meeting
                   </a>
                 </Link>
@@ -113,7 +113,7 @@ export default function Students() {
                 <Link
                   href="/about"
                 >
-                  <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-sky-400 bg-white hover:bg-sky-50">
+                  <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary-400 bg-white hover:bg-primary-50">
                     Learn more
                   </a>
                 </Link>

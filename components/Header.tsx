@@ -41,7 +41,7 @@ const resources = [
   {
     name: 'Guides & Reference',
     description: "Need something? It\'s probably here",
-    href: '/reference',
+    href: 'https://docs.mintyh.me',
     icon: BookmarkAltIcon,
   },
   { name: 'Press Kit',
@@ -79,7 +79,7 @@ export interface IHeaderProps {
 
 export default function SiteHeader(props:IHeaderProps) {
   return (
-    <div>
+    <div className="bg-white">
       <Head>
         <title>Project Y - {props.title}</title>
         <meta name="description" content={props.description} />
@@ -101,7 +101,7 @@ export default function SiteHeader(props:IHeaderProps) {
           }}
         />
       </Head>
-      <Popover className="shadow-md relative bg-white">
+      <Popover className="shadow-md relative bg-opacity-100 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -114,7 +114,7 @@ export default function SiteHeader(props:IHeaderProps) {
               </Link>
             </div>
             <div className="-mr-2 -my-2 md:hidden">
-              <Popover.Button className="bg-transparent rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-400">
+              <Popover.Button className="bg-transparent rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-400">
                 <span className="sr-only">Open menu</span>
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
@@ -126,7 +126,7 @@ export default function SiteHeader(props:IHeaderProps) {
                     <Popover.Button
                       className={classNames(
                         open ? 'text-gray-900' : 'text-gray-500',
-                        'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400'
+                        'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-400'
                       )}
                     >
                       <span>About</span>
@@ -157,7 +157,7 @@ export default function SiteHeader(props:IHeaderProps) {
                                 href={item.href}
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                               >
-                                <item.icon className="flex-shrink-0 h-6 w-6 text-sky-400" aria-hidden="true" />
+                                <item.icon className="flex-shrink-0 h-6 w-6 text-primary-400" aria-hidden="true" />
                                 <div className="ml-4">
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                   <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -179,7 +179,7 @@ export default function SiteHeader(props:IHeaderProps) {
                     <Popover.Button
                       className={classNames(
                         open ? 'text-gray-900' : 'text-gray-500',
-                        'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400'
+                        'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-400'
                       )}
                     >
                       <span>Resources</span>
@@ -210,7 +210,7 @@ export default function SiteHeader(props:IHeaderProps) {
                                 href={item.href}
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                               >
-                                <item.icon className="flex-shrink-0 h-6 w-6 text-sky-400" aria-hidden="true" />
+                                <item.icon className="flex-shrink-0 h-6 w-6 text-primary-400" aria-hidden="true" />
                                 <div className="ml-4">
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                   <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -251,7 +251,7 @@ export default function SiteHeader(props:IHeaderProps) {
                     />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-400">
+                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-400">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -265,7 +265,7 @@ export default function SiteHeader(props:IHeaderProps) {
                         href={item.href}
                         className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                       >
-                        <item.icon className="flex-shrink-0 h-6 w-6 text-sky-400" aria-hidden="true" />
+                        <item.icon className="flex-shrink-0 h-6 w-6 text-primary-400" aria-hidden="true" />
                         <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
                       </a>
                     ))}
@@ -294,13 +294,13 @@ export default function SiteHeader(props:IHeaderProps) {
                 <div>
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-400 hover:bg-indigo-700"
+                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary-400 hover:bg-indigo-700"
                   >
                     Sign up
                   </a>
                   <p className="mt-6 text-center text-base font-medium text-gray-500">
                     Existing customer?{' '}
-                    <a href="#" className="text-sky-400 hover:text-sky-400">
+                    <a href="#" className="text-primary-400 hover:text-primary-500">
                       Sign in
                     </a>
                   </p>

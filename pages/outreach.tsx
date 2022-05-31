@@ -3,6 +3,7 @@ import SiteFooter from "../components/Footer";
 import {BrandDiscord, BrandTwitch, BrandYoutube, Calendar} from "tabler-icons-react";
 import React from "react";
 import { createStyles, Text } from '@mantine/core';
+import * as style from "../tailwind.config"
 
 
 const programs =
@@ -31,7 +32,7 @@ const programs =
 const useStyles = createStyles((theme) => ({
   root: {
     display: 'flex',
-    backgroundImage: `linear-gradient(-60deg, #22d3ee 0%, #0ea5e9 100%)`,
+    backgroundImage: `linear-gradient(-60deg, ${style.theme.colors.blue["400"]} 0%, ${style.theme.colors.cyan["400"]} 100%)`,
     padding: theme.spacing.xl * 1.5,
     borderRadius: theme.radius.md,
     
@@ -101,14 +102,14 @@ export function StatsGroup({ data }: StatsGroupProps) {
 
 export default function Outreach(){
   return(
-    <div className="bg-gradient-to-br from-white to-sky-100">
+    <div className="bg-gradient-to-br from-white to-primary-100">
       <div className="sticky z-50 top-0">
         <SiteHeader title="Outreach" description="Team 4153's outreach operations and community relations"/>
       </div>
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-base text-sky-600 font-semibold tracking-wide uppercase">Outreach</h2>
+            <h2 className="text-base text-primary-500 font-semibold tracking-wide uppercase">Outreach</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               How We&apos;re Expanding STEM in New Mexico
             </p>
@@ -123,7 +124,7 @@ export default function Outreach(){
               {programs.map((program) => (
                 <div key={program.name} className="relative">
                   <dt>
-                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
+                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
                       <program.icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{program.name}</p>
@@ -139,7 +140,7 @@ export default function Outreach(){
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center pb-6">
-            <h2 className="text-base text-sky-600 font-semibold tracking-wide uppercase">By The Numbers</h2>
+            <h2 className="text-base text-primary-500 font-semibold tracking-wide uppercase">By The Numbers</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               What We&apos;ve Accomplished So Far
             </p>
