@@ -48,10 +48,7 @@ const activities:FeatureProps[]=[
 
 export default function Students() {
   return(
-    <div className="min-h-screen bg-gradient-to-br from-white to-primary-50">
-      <div className="sticky z-50 top-0">
-        <SiteHeader title="Students" description="Project Y Student Section"/>
-      </div>
+    <div>
       <div className="divide-y-2">
         <div className="py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -122,7 +119,6 @@ export default function Students() {
           </div>
         </div>
       </div>
-      <SiteFooter/>
     </div>
   )
 }

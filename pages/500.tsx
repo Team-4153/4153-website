@@ -47,7 +47,6 @@ export default function ServerErrorTitle() {
   
   return (
     <div>
-      <SiteHeader title="500" description="Internal Server Error"/>
       <Container className={classes.root}>
         <div className={classes.label}>500</div>
         <Title className={classes.title}>Uh Oh</Title>

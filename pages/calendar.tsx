@@ -8,10 +8,7 @@ import React from "react";
 
 export default function Calendar(args: { gKey: any; }){
   return(
-    <div className="bg-gradient-to-br min-h-screen from-white to-sky-50">
-      <div className="sticky z-50 top-0">
-        <SiteHeader title="Calendar" description="Team 4153's event calendar"/>
-      </div>
+    <div>
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center pb-6">
@@ -25,7 +22,6 @@ export default function Calendar(args: { gKey: any; }){
           </div>
         </div>
       </div>
-      <SiteFooter/>
     </div>
   )
 }

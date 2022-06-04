@@ -102,10 +102,7 @@ export function StatsGroup({ data }: StatsGroupProps) {
 
 export default function Outreach(){
   return(
-    <div className="bg-gradient-to-br from-white to-primary-100">
-      <div className="sticky z-50 top-0">
-        <SiteHeader title="Outreach" description="Team 4153's outreach operations and community relations"/>
-      </div>
+    <div>
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
@@ -190,7 +187,6 @@ export default function Outreach(){
           <img className="bg-blue-400 rounded-2xl basis-[22.222222222%] h-full object-cover" src="/placeholder.png"/>
         </div>
       </div>
-      <SiteFooter/>
     </div>
   )
 }

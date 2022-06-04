@@ -98,10 +98,8 @@ export function FaqSimple() {
 }
 export default function Faq() {
   return(
-    <div className="bg-gradient-to-br min-h-screen from-white to-sky-50">
-      <SiteHeader title="FAQ" description="Frequently asked questions about the team, FRC, and FIRST"/>
+    <div>
       <FaqSimple/>
-      <SiteFooter/>
     </div>
   )
 }

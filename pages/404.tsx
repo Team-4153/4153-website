@@ -47,7 +47,6 @@ export default function NotFoundTitle() {
   
   return (
     <div>
-      <SiteHeader title="404" description="Resource not found"/>
       <Container className={classes.root}>
         <div className={classes.label}>404</div>
         <Title className={classes.title}>You have found a secret place.</Title>
