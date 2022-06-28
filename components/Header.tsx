@@ -27,7 +27,7 @@ const solutions = [
   {
     name: 'Past Robots',
     description: 'See our previous and current robots',
-    href: '/',
+    href: '/robots',
     icon: CursorClickIcon,
   },
   {
