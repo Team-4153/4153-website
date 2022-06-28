@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Title, Accordion, createStyles } from '@mantine/core';
 import SiteHeader from "../components/Header";
 import SiteFooter from "../components/Footer";
+import Head from "next/head";
 
 const useStyles = createStyles((theme, _params, getRef) => {
   const control = getRef('control');
@@ -98,9 +99,7 @@ export function FaqSimple() {
 export default function Faq() {
   return(
     <div>
-      <SiteHeader/>
       <FaqSimple/>
-      <SiteFooter/>
     </div>
   )
 }
