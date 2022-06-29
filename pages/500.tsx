@@ -47,28 +47,6 @@ export default function ServerErrorTitle() {
   
   return (
     <div>
-      <Head>
-        <title>500</title>
-        <meta name="description" content="Internal Server Error" />
-        <link rel="icon" href="/globe_notext.png" />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-YYB5P642PC}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-YYB5P642PC', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
-      </Head>
-      <SiteHeader/>
       <Container className={classes.root}>
         <div className={classes.label}>500</div>
         <Title className={classes.title}>Uh Oh</Title>
