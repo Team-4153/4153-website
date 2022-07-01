@@ -1,6 +1,4 @@
 import '../styles/Home.module.css'
-import SiteHeader from '../components/Header'
-import SiteFooter from "../components/Footer";
 import Landing from "../components/Landing";
 import Sponsors from "../components/Sponsors";
 import React from "react";
@@ -10,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Landing/>
-      <div className="py-12">
+      <div className="py-12" id="about">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center pb-6">
             <h2 className="text-base text-primary-500 font-semibold tracking-wide uppercase">Who we are</h2>

@@ -26,6 +26,7 @@ const robotsList = [
             }
         ],
         cad:"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        git:"https://www.youtube.com/watch?v=LDU_Txk06tM",
         stage:{
             state:2,
             status:EStatus.Ongoing
@@ -44,6 +45,7 @@ const robotsList = [
             }
         ],
         cad:"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        git:"https://www.youtube.com/watch?v=LDU_Txk06tM",
         stage:{
             state:2,
             status:EStatus.Success
@@ -62,8 +64,9 @@ const robotsList = [
             }
         ],
         cad:"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        git:"https://www.youtube.com/watch?v=LDU_Txk06tM",
         stage:{
-            state:2,
+            state:6,
             status:EStatus.Fail
         }
     }
@@ -124,6 +127,7 @@ export default function robots(){
                                         <p>Game: {value.game}</p>
                                         <p>Description: {value.description}</p>
                                         <p>CAD: <Link href={value.cad}><a className="text-primary underline">Click Here</a></Link></p>
+                                        <p>Code: <Link href={value.git}><a className="text-primary underline">Click Here</a></Link></p>
                                     </div>
                                     <div className="basis-1/2">
                                         <Stepper active={value.stage.state} orientation="vertical">

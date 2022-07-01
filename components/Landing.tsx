@@ -1,5 +1,6 @@
 import React from 'react';
 import { createStyles, Overlay, Container, Title, Button, Text } from '@mantine/core';
+import Link from "next/link";
 
 const useStyles = createStyles((theme) => ({
   hero: {
@@ -10,7 +11,7 @@ const useStyles = createStyles((theme) => ({
     backgroundPosition: 'center',
     height:'100vh',
   },
-  
+
   container: {
     height: 700,
     display: 'flex',
@@ -20,43 +21,45 @@ const useStyles = createStyles((theme) => ({
     paddingBottom: theme.spacing.xl * 6,
     zIndex: 1,
     position: 'relative',
-    
+
     [theme.fn.smallerThan('sm')]: {
       height: 500,
       paddingBottom: theme.spacing.xl * 3,
     },
   },
-  
+
   title: {
     color: theme.white,
     fontSize: 60,
     fontWeight: 900,
     lineHeight: 1.1,
-    
+
     [theme.fn.smallerThan('sm')]: {
       fontSize: 40,
       lineHeight: 1.2,
     },
-    
+
     [theme.fn.smallerThan('xs')]: {
       fontSize: 28,
       lineHeight: 1.3,
     },
   },
-  
+
   description: {
     color: theme.white,
     maxWidth: 600,
-    
+    paddingTop: "2rem",
+    paddingBottom:"2rem",
+
     [theme.fn.smallerThan('sm')]: {
       maxWidth: '100%',
-      fontSize: theme.fontSizes.sm,
+      fontSize: theme.fontSizes.md,
     },
   },
-  
+
   control: {
     marginTop: theme.spacing.xl * 1.5,
-    
+
     [theme.fn.smallerThan('sm')]: {
       width: '100%',
     },
@@ -65,7 +68,7 @@ const useStyles = createStyles((theme) => ({
 
 export default function Landing() {
   const { classes } = useStyles();
-  
+
   return (
     <div className={classes.hero}>
       <Overlay
@@ -75,6 +78,8 @@ export default function Landing() {
       />
       <Container className={classes.container}>
         <Title className={classes.title}>Team 4153 Project Y</Title>
+        <Text className={classes.description}>Bringing STEM to Los Alamos and Northern New Mexico for {new Date().getFullYear()-2011} Years</Text>
+        <Link href={"#about"}><button className="rounded-full bg-gradient-to-r from-blue-500 to-primary"><div className="py-2 px-4">Learn More</div></button></Link>
       </Container>
     </div>
   );
