@@ -111,8 +111,7 @@ export default function Outreach(){
               How We&apos;re Expanding STEM in New Mexico
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-              accusamus quisquam.
+              Project Y aims to increase the number of FRC teams in NM from 10 to 100. Learn how we plan to do it.
             </p>
           </div>
       
@@ -142,8 +141,7 @@ export default function Outreach(){
               What We&apos;ve Accomplished So Far
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-              accusamus quisquam.
+              See the progress we&apos;ve made so far on our mission to expand STEM.
             </p>
           </div>
           <StatsGroup

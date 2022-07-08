@@ -1,8 +1,6 @@
-import SiteHeader from "../components/Header";
-import SiteFooter from "../components/Footer";
 import React from "react";
 import {Container, createStyles, SimpleGrid, Text} from "@mantine/core";
-import {Bulb, Compass, MapPin, School, Settings, Truck} from "tabler-icons-react";
+import {Bulb, Compass, School, Truck} from "tabler-icons-react";
 import * as colors from "../tailwind.config"
 
 const mission = [
@@ -10,40 +8,19 @@ const mission = [
     icon: School,
     title: 'Education',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'We teach skills that students will never learn in school yet are in demand more and more including machining, engineering, teamwork and leadership',
   },
   {
     icon: Bulb,
     title: 'Inspiration',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Project Y hopes to inspire students to pursue careers in STEM, hekping them become the next generation of problem solvers',
   },
   {
     icon: Compass,
     title: 'Exploration',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-];
-
-const info = [
-  {
-    icon: MapPin,
-    title: 'Local',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    icon: School,
-    title: 'Student Led',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    icon: Compass,
-    title: 'Exploration',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'We enable students to explore various career paths by providing them the opportunity to learn invaluable skills and providing real-world experience',
   },
 ];
 
@@ -116,7 +93,7 @@ export default function About() {
             <div className="lg:text-center pb-6">
               <h2 className="text-base text-primary-500 font-semibold tracking-wide uppercase">Our Mission</h2>
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Lorem ipsum dolor sit amet
+              Enhancing STEM Educational Opportunities in Northern New Mexico Through Robotics
               </p>
             </div>
             <Container mt={30} mb={30} size="lg">

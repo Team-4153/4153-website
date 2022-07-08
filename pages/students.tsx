@@ -1,9 +1,7 @@
-import SiteHeader from "../components/Header";
 import React from "react";
 import {Container, SimpleGrid} from "@mantine/core";
 import {Feature, FeatureProps} from "./about";
 import {Browser, BuildingCommunity, Plane, School, Tool, Users} from "tabler-icons-react";
-import SiteFooter from "../components/Footer";
 import Link from "next/link";
 
 const benefits:FeatureProps[]=[
@@ -27,22 +25,22 @@ const activities:FeatureProps[]=[
   {
     icon:BuildingCommunity,
     title:"Serve",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description:"Team 4153 exists to serve its students and community. We not only teach but also raise awareness and expand access."
   },
   {
     icon:Browser,
     title:"Teach",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description:"We serve as a vehicle to teach students technical skills like machining, engineering and design in an environment that also teaches life skills like leadership and teamwork"
   },
   {
     icon:Users,
     title:"Lead",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description:"Team members are leaders in the community and schools. We work hard to lead not only our own teams but also in NM and at school."
   },
   {
     icon: Tool,
     title: "Build",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description:"In the words of FIRST founder Dean Kamen, \"We Don't use kids to use robots but use robots to build kids\". FIRST builds skills that are always in demand making them next-gen problem solvers."
   }
 ]
 

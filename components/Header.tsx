@@ -9,7 +9,6 @@ import {
   SpeakerphoneIcon, UserGroupIcon, NewspaperIcon, QuestionMarkCircleIcon
 } from '@heroicons/react/outline'
 import {School, Users} from "tabler-icons-react";
-
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Link from "next/link";
 import Image from "next/image";
