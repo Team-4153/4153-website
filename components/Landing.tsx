@@ -6,7 +6,7 @@ const useStyles = createStyles((theme) => ({
   hero: {
     position: 'relative',
     backgroundImage:
-      'url(/TeamPhoto.JPG)',
+      'url(https://cdn.discordapp.com/attachments/878062415797952523/1014750763819479040/2022_Project_Y_Backgroung.png)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height:'100vh',

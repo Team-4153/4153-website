@@ -55,7 +55,7 @@ const questions = [
   },
   {
     Q:"What are the benefits of participating in FRC and FIRST?",
-    A:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor morbi non. Adipiscing bibendum est ultricies integer. Sit amet venenatis urna cursus eget. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Vitae auctor eu augue ut lectus arcu bibendum. Et netus et malesuada fames ac turpis egestas maecenas. Ac felis donec et odio pellentesque diam. Neque laoreet suspendisse interdum consectetur. Purus gravida quis blandit turpis cursus."
+    A:"FIRST Alumni are much more likely to pursue careers in STEM in the future. The vast majority report a major increase in life skills like team work, collaboration and time management. In addition, FIRST provides numerous scholarships and provides amazing essay opportunities for their alumni."
   },
   {
     Q:"How can I get involved as a parent/other adult?",
@@ -63,13 +63,13 @@ const questions = [
   },
   {
     Q:"I'm a member of the press that wants to run a story.",
-    A:"Read our press kit which is linked in the Resources section of our page"
+    A:"The team provides a general information packet for members of the public wanting to get involved and members of the press wanting to run a story. Check the Press Kit page under our Resources tab"
   },
   {
     Q:"Are there any costs associated with membership in the team?",
     A:"Yes. We charge a $300/season student fee to cover materials, competition registration and other things. You may be asked to pay additional fees for every competition that your student attends. Financial aid is available"
   }
-]
+] 
 
 export function FaqSimple() {
   const { classes } = useStyles();
