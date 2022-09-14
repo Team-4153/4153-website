@@ -103,11 +103,11 @@ export default function SiteHeader(props:IHeaderProps) {
       <Popover className="shadow-md relative bg-opacity-100 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-            <div className="flex justify-start lg:w-0 lg:flex-1">
+            <div className="flex justify-start y-0 lg:w-0 lg:flex-1">
               <Link href="/">
                 <div>
                   <a href="">
-                    <Image src="/favicon.png" alt="team logo" height={48} width={48}/>
+                    <Image src="/favicon.png" alt="team logo" height={64} width={64}/>
                   </a>
                 </div>
               </Link>
@@ -309,9 +309,9 @@ export default function SiteHeader(props:IHeaderProps) {
           </Popover.Panel>
         </Transition>
         <GithubCorner
-          bannerColor="#0ea5e9"
+          bannerColor="#12233f"
           octoColor="#fff"
-          size="102"
+          size="120"
           href="https://github.com/minhtet-htoon/4153-website"
         />
       </Popover>
