@@ -51,15 +51,15 @@ const questions = [
   },
   {
     Q:"How can I join as a student?",
-    A:"Look for a meeting time, show up"
+    A:"Check out our calendar for a meeting date and time and feel free to drop by! If you have any questions, please contact us!"
   },
   {
     Q:"What are the benefits of participating in FRC and FIRST?",
-    A:"FIRST Alumni are much more likely to pursue careers in STEM in the future. The vast majority report a major increase in life skills like team work, collaboration and time management. In addition, FIRST provides numerous scholarships and provides amazing essay opportunities for their alumni."
+    A:"FIRST helps students connect with a vast community of students, mentors, colleges, and future employers. Beyond helping students make connections, FIRST also teaches them important technical and life skills including (but not limited to) machining, programming, business, design, leadership, and teamwork. FIRST alumni are much more likely to pursue careers in STEM in the future. The vast majority report a major increase in life skills like team work, collaboration, and time management. Additionally, FIRST provides numerous opportunities to such as millions of dollars in scholarships."
   },
   {
     Q:"How can I get involved as a parent/other adult?",
-    A:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor morbi non. Adipiscing bibendum est ultricies integer. Sit amet venenatis urna cursus eget. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Vitae auctor eu augue ut lectus arcu bibendum. Et netus et malesuada fames ac turpis egestas maecenas. Ac felis donec et odio pellentesque diam. Neque laoreet suspendisse interdum consectetur. Purus gravida quis blandit turpis cursus."
+    A:"Parents are super important! Student’s parents are a vital part of our team as they help out with transportation, fundraising, other team activities, and last but not least, supporting their child. Parents are always welcome to stop into the shop to see what the team is up to. If you’re not a parent but you’d still like to get involved, Project Y is also always looking for more mentors! Our mentors help guide our students and help them develop students new skills. If you’re interested in being a mentor, please feel free to contact us"
   },
   {
     Q:"I'm a member of the press that wants to run a story.",

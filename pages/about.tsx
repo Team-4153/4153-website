@@ -14,7 +14,7 @@ const mission = [
     icon: Bulb,
     title: 'Inspiration',
     description:
-      'Project Y hopes to inspire students to pursue careers in STEM, hekping them become the next generation of problem solvers',
+      'roject Y hopes to inspire students to pursue careers in STEM and to help them to become the next generation of problem solvers',
   },
   {
     icon: Compass,
