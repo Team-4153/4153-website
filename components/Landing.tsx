@@ -43,6 +43,7 @@ const useStyles = createStyles((theme) => ({
       fontSize: 28,
       lineHeight: 1.3,
     },
+    fontFamily:'Cantarell'
   },
 
   description: {
@@ -55,6 +56,7 @@ const useStyles = createStyles((theme) => ({
       maxWidth: '100%',
       fontSize: theme.fontSizes.md,
     },
+    fontFamily: 'Verdana, sans-serif',
   },
 
   control: {

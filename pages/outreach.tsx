@@ -1,5 +1,3 @@
-import SiteHeader from "../components/Header";
-import SiteFooter from "../components/Footer";
 import {BrandDiscord, BrandTwitch, BrandYoutube, Calendar} from "tabler-icons-react";
 import React from "react";
 import { createStyles, Text } from '@mantine/core';
@@ -108,10 +106,10 @@ export default function Outreach(){
           <div className="lg:text-center">
             <h2 className="text-base text-primary-500 font-semibold tracking-wide uppercase">Outreach</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              How We&apos;re Expanding STEM in New Mexico
+              How we’re expanding STEM in New Mexico
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Project Y aims to increase the number of FRC teams in NM from 10 to 100. Learn how we plan to do it.
+              Project Y aims to increase awareness and accessibility for STEM in New Mexico. Learn how we plan to do it.
             </p>
           </div>
       
@@ -170,19 +168,19 @@ export default function Outreach(){
       </div>
       <div className="w-full py-12 bottom-2 flex flex-col gap-4 justify-center items-center py-6">
         <div className="flex h-60 gap-4 w-[80%] flex-row">
-          <img className="bg-blue-400 rounded-2xl basis-1/4 h-full object-cover" src="/placeholder.png"/>
-          <img className="bg-blue-400 rounded-2xl basis-1/3 h-full object-cover" src="/placeholder.png"/>
-          <img className="bg-blue-400 rounded-2xl basis-6/12 h-full object-cover" src="/placeholder.png"/>
+          <img className="bg-blue-400 rounded-2xl basis-1/4 h-full object-cover" src="/placeholder.png" alt="placeholder.png"/>
+          <img className="bg-blue-400 rounded-2xl basis-1/3 h-full object-cover" src="/placeholder.png" alt="placeholder.png"/>
+          <img className="bg-blue-400 rounded-2xl basis-6/12 h-full object-cover" src="/placeholder.png" alt="placeholder.png"/>
         </div>
         <div className="flex h-60 gap-4 w-[80%] flex-row-reverse">
-          <img className="bg-blue-400 rounded-2xl basis-1/4 h-full object-cover" src="/placeholder.png"/>
-          <img className="bg-blue-400 rounded-2xl basis-1/3 h-full object-cover" src="/placeholder.png"/>
-          <img className="bg-blue-400 rounded-2xl basis-6/12 h-full object-cover" src="/placeholder.png"/>
+          <img className="bg-blue-400 rounded-2xl basis-1/4 h-full object-cover" src="/placeholder.png" alt="placeholder.png"/>
+          <img className="bg-blue-400 rounded-2xl basis-1/3 h-full object-cover" src="/placeholder.png" alt="placeholder.png"/>
+          <img className="bg-blue-400 rounded-2xl basis-6/12 h-full object-cover" src="/placeholder.png" alt="placeholder.png"/>
         </div>
         <div className="flex h-60 gap-4 w-[80%] flex-row-reverse">
-          <img className="bg-blue-400 rounded-2xl basis-[44.444444444%] h-full object-cover" src="/placeholder.png"/>
-          <img className="bg-blue-400 rounded-2xl basis-1/3 h-full object-cover" src="/placeholder.png"/>
-          <img className="bg-blue-400 rounded-2xl basis-[22.222222222%] h-full object-cover" src="/placeholder.png"/>
+          <img className="bg-blue-400 rounded-2xl basis-[44.444444444%] h-full object-cover" src="/placeholder.png" alt="placeholder.png"/>
+          <img className="bg-blue-400 rounded-2xl basis-1/3 h-full object-cover" src="/placeholder.png" alt="placeholder.png"/>
+          <img className="bg-blue-400 rounded-2xl basis-[22.222222222%] h-full object-cover" src="/placeholder.png" alt="placeholder.png"/>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ const benefits:FeatureProps[]=[
   {
     icon:School,
     title:"Learn",
-    description:"A comprehensive set of skills that prepare you for the unique engineering challenges of today and tomorrow."
+    description:"A comprehensive set of skills that prepare you for the unique engineering challenges of today and tomorrow"
   },
   {
     icon:Users,
@@ -18,29 +18,29 @@ const benefits:FeatureProps[]=[
   {
     icon:Plane,
     title:"Travel & Compete",
-    description:"With a world-class team for numerous state and international titles while forming connections"
+    description:"With a team for numerous district and international titles while forming connections with other teams and field professionals"
   }
 ]
 const activities:FeatureProps[]=[
   {
     icon:BuildingCommunity,
     title:"Serve",
-    description:"Team 4153 exists to serve its students and community. We not only teach but also raise awareness and expand access."
+    description:"Team 4153 exists to serve its students and community. We not only teach but also raise awareness and expand access to STEM throughout both our Los Alamos and New Mexico communities. "
   },
   {
     icon:Browser,
     title:"Teach",
-    description:"We serve as a vehicle to teach students technical skills like machining, engineering and design in an environment that also teaches life skills like leadership and teamwork"
+    description:"We serve as a vehicle to teach students technical skills such as machining, engineering, and designing in an environment which also teaches life skills like leadership and teamwork."
   },
   {
     icon:Users,
     title:"Lead",
-    description:"Team members are leaders in the community and schools. We work hard to lead not only our own teams but also in NM and at school."
+    description:"Team members are leaders in both their schools and communities. Project Y works hard to lead not only in our own team but also in New Mexico at large."
   },
   {
     icon: Tool,
     title: "Build",
-    description:"In the words of FIRST founder Dean Kamen, \"We Don't use kids to use robots but use robots to build kids\". FIRST builds skills that are always in demand making them next-gen problem solvers."
+    description:"In the words of the FIRST founder Dean Kamen, “We’re not using kids to build robots- we’re using robots to build kids.” FIRST teams don’t just build robots- we also build students with in-demand skills that help to make them the next generation of problem solvers."
   }
 ]
 
