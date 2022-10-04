@@ -1,8 +1,5 @@
 import React from 'react';
 import { Container, Title, Accordion, createStyles } from '@mantine/core';
-import SiteHeader from "../components/Header";
-import SiteFooter from "../components/Footer";
-import Head from "next/head";
 
 const useStyles = createStyles((theme, _params, getRef) => {
   const control = getRef('control');
@@ -55,7 +52,7 @@ const questions = [
   },
   {
     Q:"What are the benefits of participating in FRC and FIRST?",
-    A:"FIRST Alumni are much more likely to pursue careers in STEM in the future. The vast majority report a major increase in life skills like team work, collaboration and time management. In addition, FIRST provides numerous scholarships and provides amazing essay opportunities for their alumni."
+    A:"FIRST Alumni are 2x as likely to pursue STEM major. More than 93% of students report an increase in life skills like time management, problem solving and conflict resolution. More than 85% pf students are interested in taking advanced STEM courses in high school or attending college. In addition, FIRST provides numerous scholarships and provides amazing essay opportunities for their alumni."
   },
   {
     Q:"How can I get involved as a parent/other adult?",
