@@ -26,7 +26,7 @@ const solutions = [
   {
     name: 'Past Robots',
     description: 'See our previous and current robots',
-    href: '/robots',
+    href: '/not-ready',
     icon: CursorClickIcon,
   },
   {
@@ -62,7 +62,7 @@ const resources = [
   {
     name:"For Parents",
     description: "Information for parents",
-    href:'/parents',
+    href:'/not-ready',
     icon:Users
   }
 ]
