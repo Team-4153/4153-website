@@ -7,5 +7,11 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withTM(withBundleAnalyzer({
-  // your custom config goes here
+  async redirects(){
+    return [{
+      source: '/discord',
+      destination: 'https://discord.gg/rpj7nNWzTx',
+      permanent: true
+    }]
+  }
 }));
