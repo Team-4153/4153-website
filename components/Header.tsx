@@ -8,7 +8,7 @@ import {
   XIcon,
   SpeakerphoneIcon, UserGroupIcon, NewspaperIcon, QuestionMarkCircleIcon
 } from '@heroicons/react/outline'
-import {School, Users} from "tabler-icons-react";
+import {School, Users, AlertTriangle} from "tabler-icons-react";
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Link from "next/link";
 import Image from "next/image";
@@ -37,11 +37,17 @@ const solutions = [
   },
 ]
 const resources = [
+  // {
+  //   name: 'Guides & Reference',
+  //   description: "Need something? It\'s probably here",
+  //   href: 'https://docs.mintyh.me',
+  //   icon: BookmarkAltIcon,
+  // },
   {
-    name: 'Guides & Reference',
-    description: "Need something? It\'s probably here",
-    href: 'https://docs.mintyh.me',
-    icon: BookmarkAltIcon,
+    name: 'Safety',
+    description: 'Machine Training Videos, Forms and Waivers',
+    href: '/safety',
+    icon: AlertTriangle
   },
   { name: 'Press Kit',
     description: 'Want to write about us, click here',
@@ -171,7 +177,7 @@ export default function SiteHeader(props:IHeaderProps) {
                 )}
               </Popover>
               <Link href="/calendar"><a className="text-base font-medium text-gray-500 hover:text-gray-900">Calendar</a></Link>
-              <Link href="https://www.firstinspires.org/robotics/frc"><a className="text-base font-medium text-gray-500 hover:text-gray-900">FIRST Program Info</a></Link>
+              <Link href="https://www.firstinspires.org/robotics/frc"><a className="text-base font-medium text-gray-500 hover:text-gray-900" target="_blank">FIRST Program Info</a></Link>
               <Popover className="relative">
                 {({ open }) => (
                   <>
@@ -312,7 +318,8 @@ export default function SiteHeader(props:IHeaderProps) {
           bannerColor="#12233f"
           octoColor="#fff"
           size="120"
-          href="https://github.com/minhtet-htoon/4153-website"
+          href="https://github.com/Team-4153"
+          target="_blank"
         />
       </Popover>
     </div>

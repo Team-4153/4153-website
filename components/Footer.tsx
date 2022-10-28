@@ -13,7 +13,7 @@ export default function SiteFooter() {
                Designed and Built by Minhtet Htoon
            </p>
            <p className="mt-2 sm:mt-0 sm:ml-3 sm:border-l sm:border-gray-200 sm:pl-3">
-               Licensed Under the <Link target="_blank" rel="noopener noreferrer" href="https://choosealicense.com/licenses/mit/" ><a className="hover:text-primary inline underline">MIT License</a></Link>
+               Licensed Under the <Link rel="noopener noreferrer" href="https://choosealicense.com/licenses/mit/" ><a target="_blank" className="hover:text-primary inline underline">MIT License</a></Link>
            </p>
        </div>
    </footer>

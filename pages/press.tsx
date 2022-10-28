@@ -14,7 +14,7 @@ export default function Outreach() {
             <br/>
             <Link  href="/presskit.docx"><a className="hover:text-primary inline underline">Download as DOCX</a></Link>
             <br/>
-            <Link  href="https://docs.google.com/document/d/1IPhR3Mdrkqa81vsTV8C_8-DC15Ycwz6ADGzQgF0J8WE/edit"><a className="hover:text-primary inline underline">View on Google Docs</a></Link>
+            <Link href="https://docs.google.com/document/d/1IPhR3Mdrkqa81vsTV8C_8-DC15Ycwz6ADGzQgF0J8WE/edit"><a target="_blank" className="hover:text-primary inline underline">View on Google Docs</a></Link>
         </div>
       </div>
     </div>
