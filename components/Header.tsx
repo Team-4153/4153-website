@@ -68,7 +68,7 @@ const resources = [
   {
     name:"For Parents",
     description: "Information for parents",
-    href:'/parents',
+    href:'/not-ready',
     icon:Users
   }
 ]

@@ -50,7 +50,7 @@ export default function NotFoundTitle() {
             <Container className={classes.root}>
                 <Title className={classes.title}>You have found a secret place.</Title>
                 <Text color="dimmed" size="lg" align="center" className={classes.description}>
-                    Unfortunately, this page isn&apos;t ready for the public quite yet. It may be implemented on our <Link href={"https://beta.mintyh.me"}>Beta Implementation</Link>
+                    Unfortunately, this page isn&apos;t ready for the public quite yet. It may be implemented on our <Link href={"https://new.team4153.org"}><a className="hover:text-primary inline underline" target="_blank">Beta Implementation</a></Link>
                 </Text>
                 <Group position="center">
                     <Link href='/'>
