@@ -29,12 +29,12 @@ const solutions = [
     href: '/not-ready',
     icon: CursorClickIcon,
   },
-  {
-    name: 'Outreach Programs',
-    description: "Learn about what we're doing to expand STEM in new Mexico",
-    href: '/outreach',
-    icon: SpeakerphoneIcon,
-  },
+  // {
+  //   name: 'Outreach Programs',
+  //   description: "Learn about what we're doing to expand STEM in new Mexico",
+  //   href: '/outreach',
+  //   icon: SpeakerphoneIcon,
+  // },
 ]
 const resources = [
   // {
@@ -65,12 +65,12 @@ const resources = [
     href:'/students',
     icon:School
   },
-  {
-    name:"For Parents",
-    description: "Information for parents",
-    href:'/not-ready',
-    icon:Users
-  }
+  // {
+  //   name:"For Parents",
+  //   description: "Information for parents",
+  //   href:'/not-ready',
+  //   icon:Users
+  // }
 ]
 
 function classNames(...classes: string[]) {

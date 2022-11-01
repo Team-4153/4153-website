@@ -17,6 +17,9 @@ export default function Safety() {
                     <p className="py-6 text-2xl font-light text-primary-500 uppercase">
                         Safety Forms
                     </p>
+                    <p>
+                        <Link href={"/general-safety.pdf"}><a target="_blank" className="hover:text-primary inline underline">Download Safety Form</a></Link>
+                    </p>
                 </div>
                 <div className="basis-1/3 px-6 ">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/tz5aEal91OM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -36,6 +39,9 @@ export default function Safety() {
                     <p className="py-6 text-2xl font-light text-primary-500 uppercase">
                         Safety Forms
                     </p>
+                    <p>
+                        <Link href={"/drill-press.pdf"}><a target="_blank" className="hover:text-primary inline underline">Download Safety Form</a></Link>
+                    </p>
                 </div>
             </div>
             <p className="text-black uppercase border-b-2 text-primary-600 border-t-2 font-light py-6 text-3xl ">
@@ -44,10 +50,13 @@ export default function Safety() {
             <div className="flex py-6 flex-row mx-60">
             <div className="basis-2/3 px-6 border-r-2">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, numquam pariatur sed quia quis excepturi facilis, impedit voluptatem quidem alias accusamus illum, cupiditate aliquam dolor ea libero? Quia, debitis autem!
+                        Bandsaws are machines used for cutting stock down to size. There are 2 types of bandsaws, the vertical and the falling bandsaw. This video and document covers both.
                     </p>
                     <p className="py-6 text-2xl font-light text-primary-500 uppercase">
                         Safety Forms
+                    </p>
+                    <p>
+                        <Link href={"/bandsaw.pdf"}><a target="_blank" className="hover:text-primary inline underline">Download Safety Form</a></Link>
                     </p>
                 </div>
                 <div className="basis-1/3 px-6 ">
@@ -63,10 +72,13 @@ export default function Safety() {
                 </div>
                 <div className="basis-2/3 px-6 ">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, numquam pariatur sed quia quis excepturi facilis, impedit voluptatem quidem alias accusamus illum, cupiditate aliquam dolor ea libero? Quia, debitis autem!
+                        The milling machine is a machine that cuts stock by moving a fast moving special drill bit in order to cut away material. They operate in a similar manner to CNC machines but are manually operated. 
                     </p>
                     <p className="py-6 text-2xl font-light text-primary-500 uppercase">
                         Safety Forms
+                    </p>
+                    <p>
+                        <Link href={"/mill.pdf"}><a target="_blank" className="hover:text-primary inline underline">Download Safety Form</a></Link>
                     </p>
                 </div>
             </div>
