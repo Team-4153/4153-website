@@ -8,7 +8,7 @@ import {
   XIcon,
   SpeakerphoneIcon, UserGroupIcon, NewspaperIcon, QuestionMarkCircleIcon
 } from '@heroicons/react/outline'
-import {School, Users, AlertTriangle} from "tabler-icons-react";
+import {School, Users, AlertTriangle, Code} from "tabler-icons-react";
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Link from "next/link";
 import Image from "next/image";
@@ -49,9 +49,16 @@ const resources = [
     href: '/safety',
     icon: AlertTriangle
   },
+  {
+    name: 'Code',
+    description: 'Access code for our robots',
+    href: '/code',
+    icon: Code
+  },
   { name: 'Press Kit',
     description: 'Want to write about us, click here',
-    href: '/press', icon: NewspaperIcon
+    href: '/press', 
+    icon: NewspaperIcon
   },
   {
     name:"FAQs",

@@ -2,6 +2,7 @@ import React from "react";
 import {Container, createStyles, SimpleGrid, Text} from "@mantine/core";
 import {Bulb, Compass, School, Truck} from "tabler-icons-react";
 import * as colors from "../tailwind.config"
+import { ContactIcons } from "../components/contact";
 
 const mission = [
   {
@@ -114,6 +115,16 @@ export default function About() {
             <p className="text-justify">
             FIRST Team 4153—Project Y is the Los Alamos High School robotics team. FIRST Team 4153 encourages students to explore STEM through practical application while making it fun. It is our mission to create a sustainable FIRST program that incorporates the ideals of science, engineering, mathematics, and technology (STEM) in our community and in neighboring communities. Through the promotion of team-building, technical skills, leadership, and hard work, we hope to develop interest and inspiration in STEM for students and mentors alike.
             </p>
+          </div>
+        </div>
+        <div className="py-12">
+        <div className="lg:text-center pb-6">
+              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black sm:text-4xl">
+                Contact Us
+              </p>
+            </div>
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ContactIcons/>
           </div>
         </div>
       </div>
