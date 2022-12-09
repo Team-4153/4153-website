@@ -25,7 +25,7 @@ export default function Home() {
                 [
                   {
                     stats:"10",
-                    title:"Years of bringing STEM to NM.",
+                    title:"Years of bringing STEM to New Mexico",
                     description:""
                   },
                   {
