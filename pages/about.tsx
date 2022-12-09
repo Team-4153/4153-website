@@ -105,16 +105,18 @@ export default function About() {
           </div>
         </div>
         <div className="py-12">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
             <div className="lg:text-center pb-6">
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black sm:text-4xl">
                 Who We Are
               </p>
             </div>
-            <img src="/placeholder.png" className="w-72 float-left"/>
-            <p className="text-justify">
-            FIRST Team 4153—Project Y is the Los Alamos High School robotics team. FIRST Team 4153 encourages students to explore STEM through practical application while making it fun. It is our mission to create a sustainable FIRST program that incorporates the ideals of science, engineering, mathematics, and technology (STEM) in our community and in neighboring communities. Through the promotion of team-building, technical skills, leadership, and hard work, we hope to develop interest and inspiration in STEM for students and mentors alike.
-            </p>
+            <div className="flex flex-row">
+              <img src="/TeamPhoto.JPG" className="w-72 float-left rounded-md p-4"/>
+              <p className="text-justify left-6">
+                FIRST Team 4153—Project Y is the Los Alamos High School robotics team. FIRST Team 4153 encourages students to explore STEM through practical application while making it fun. It is our mission to create a sustainable FIRST program that incorporates the ideals of science, engineering, mathematics, and technology (STEM) in our community and in neighboring communities. Through the promotion of team-building, technical skills, leadership, and hard work, we hope to develop interest and inspiration in STEM for students and mentors alike.
+              </p>
+            </div>
           </div>
         </div>
         <div className="py-12">
