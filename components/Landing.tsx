@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, Overlay, Container, Title, Button, Text } from '@mantine/core';
+import { createStyles, Overlay, Container, Title, Text } from '@mantine/core';
 import Link from "next/link";
 
 const useStyles = createStyles((theme) => ({
@@ -81,7 +81,7 @@ export default function Landing() {
       <Container className={classes.container}>
         <Title className={classes.title}>Team 4153 Project Y</Title>
         <Text className={classes.description}>Bringing STEM to Los Alamos and Northern New Mexico for {new Date().getFullYear()-2011} Years</Text>
-        <Link href={"#about"}><button className="rounded-full bg-gradient-to-r from-blue-500 to-primary"><div className="py-2 px-4">Learn More</div></button></Link>
+        <Link href={"#about"}><button className="rounded-full bg-gradient-to-r from-blue-500 to-primary hover:scale-110 transition duration-0 hover:duration-150"><div className="py-2 px-4">Learn More</div></button></Link>
       </Container>
     </div>
   );
