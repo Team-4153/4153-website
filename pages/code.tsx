@@ -48,7 +48,7 @@ export default function code() {
                 </div>
                 <div className="basis-2/3 px-6">
                     <p>
-                      This code is an example of autonomous driving using teh LabVIEW command and control framework.
+                      This code is an example of autonomous driving using the LabVIEW command and control framework.
                       It uses a command to move the robot either to a specified distance or angle using a swerve drive.
                       To drive multiple segment, a loop can be implemented, using the while loop that check that the command is complete before moving to the next action.
                       Note that the implementation  of the {'"'}check for new command{'"'} VI had to be modified for the wait on successful completion to work. However, this will be corrected in the 2023 version of the framework.
