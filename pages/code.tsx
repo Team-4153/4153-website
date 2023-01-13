@@ -36,7 +36,7 @@ export default function code() {
                   
                   </div>
                   <div className="basis-1/3 px-6 ">
-                    <Image src="/placeholder.png" height="325" width="560" alt="placeholder.png"/>
+                    <Image src="/placeholder.png" height="325" width="560" alt="https://opengraph.githubassets.com/02d9aa7a8a37532f33015b3bc5c8074e98725dba3f044477c446c886f248b384/Team-4153/Basic-Swerve"/>
                   </div>
               </div>
               <p className="text-black uppercase border-t-2 border-b-2 text-primary-600 font-light py-6 text-3xl ">
@@ -85,7 +85,7 @@ export default function code() {
                 </div>
                   </div>
                   <div className="basis-1/3 px-6 ">
-                    <Image src="/placeholder.png" height="325" width="560" alt="placeholder.png"/>
+                    <Image src="/placeholder.png" height="325" width="560" alt="https://opengraph.githubassets.com/2a7c28c76764dc71435285d1d05a2faf2aa65c0267ba919ffc00415cb6947648/Team-4153/Vision-Test"/>
                   </div>
               </div>
               </div>
