@@ -91,7 +91,7 @@ export interface IHeaderProps {
 
 
 export default function SiteHeader(props:IHeaderProps) {
-  const [bannerVis, setBannerVis] = false;
+  const [bannerVis, setBannerVis] = useState(false);
   // @ts-ignore
   return (
     <div className="">
