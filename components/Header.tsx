@@ -91,7 +91,7 @@ export interface IHeaderProps {
 
 
 export default function SiteHeader(props:IHeaderProps) {
-  const [bannerVis, setBannerVis] = useState(new Date(2023, 1, 7, 17, 0, 0).getTime() > new Date().getTime());
+  const [bannerVis, setBannerVis] = false;
   // @ts-ignore
   return (
     <div className="">
