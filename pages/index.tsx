@@ -24,12 +24,12 @@ export default function Home() {
               {
                 [
                   {
-                    stats:"10",
+                    stats: (new Date().getFullYear()-2011),
                     title:"Years of bringing STEM to NM",
                     description:""
                   },
                   {
-                    stats:"11",
+                    stats:(new Date().getFullYear()-2010),
                     title:"Generations of Students",
                     description:""
                   },
