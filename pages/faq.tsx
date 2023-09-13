@@ -64,7 +64,7 @@ const questions = [
   },
   {
     Q:"Are there any costs associated with membership in the team?",
-    A:"Yes. We charge a $300/season student fee to cover materials, competition registration and other things. You may be asked to pay additional fees for every competition that your student attends. Financial aid is available"
+    A:"Yes. We charge a $100/season student fee to cover materials, competition registration and other things. You may be asked to pay additional fees for every competition that your student attends. Financial aid is available"
   }
 ] 
 
