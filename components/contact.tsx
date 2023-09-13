@@ -114,7 +114,7 @@ interface ContactIconsListProps {
 const MOCKDATA = [
   { title: 'Email', description: 'info@team4153.org', icon: At, url: '/'},
   { title: 'Address', description: '1990 Diamond Drive Los Alamos, NM 87544', icon: MapPin, url: '/' },
-  { title: 'Working hours', description: '5 p.m. – 7 p.m. Tue & Thurs', icon: Sun, url: '/' },
+  { title: 'Working hours', description: '5:15 p.m. – 7 p.m. Tue & Thurs', icon: Sun, url: '/' },
 ];
 
 const SOCIALDATA = [
