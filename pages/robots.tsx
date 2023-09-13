@@ -10,32 +10,22 @@ enum EStatus {
 
 const robotsList = [
     {
-        name:"Test",
-        year:"4153",
-        img:"/placeholder.png",
-        description:"Did stuff",
+        name:"Oppie",
+        year:"2012",
+        img:"/2012.JPG",
+        description:"Our first robot from 2012",
         game:"Do something",
         badges:[
-            {
-                name:"Einstein",
-                color:"yellow"
-            },
-            {
-                name:"World's",
-                color:"yellow"
-            }
         ],
-        cad:"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        git:"https://www.youtube.com/watch?v=LDU_Txk06tM",
         stage:{
-            state:2,
-            status:EStatus.Ongoing
+            state:4,
+            status:EStatus.Success
         }
     },
     {
         name:"Test 1",
-        year:"4153",
-        img:"/placeholder.png",
+        year:"2013",
+        img:"/2013.png",
         description:"Did stuff",
         game:"Do something",
         badges:[
@@ -44,8 +34,6 @@ const robotsList = [
                 color:"teal"
             }
         ],
-        cad:"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        git:"https://www.youtube.com/watch?v=LDU_Txk06tM",
         stage:{
             state:2,
             status:EStatus.Success
@@ -53,8 +41,8 @@ const robotsList = [
     },
     {
         name:"Test 2",
-        year:"4153",
-        img:"/placeholder.png",
+        year:"2014",
+        img:"/2014.png",
         description:"Did stuff",
         game:"Do something",
         badges:[
@@ -63,8 +51,74 @@ const robotsList = [
                 color:"yellow"
             }
         ],
-        cad:"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        git:"https://www.youtube.com/watch?v=LDU_Txk06tM",
+        stage:{
+            state:6,
+            status:EStatus.Fail
+        }
+    },
+    {
+        name:"Test 2",
+        year:"2015",
+        img:"/2015.png",
+        description:"Did stuff",
+        game:"Do something",
+        badges:[
+            {
+                name:"World's",
+                color:"yellow"
+            }
+        ],
+        stage:{
+            state:6,
+            status:EStatus.Fail
+        }
+    },
+    {
+        name:"Test 2",
+        year:"2016",
+        img:"/2016.JPG",
+        description:"Did stuff",
+        game:"Do something",
+        badges:[
+            {
+                name:"World's",
+                color:"yellow"
+            }
+        ],
+        stage:{
+            state:6,
+            status:EStatus.Fail
+        }
+    },
+    {
+        name:"Test 2",
+        year:"2017",
+        img:"/2017.JPG",
+        description:"Did stuff",
+        game:"Do something",
+        badges:[
+            {
+                name:"World's",
+                color:"yellow"
+            }
+        ],
+        stage:{
+            state:6,
+            status:EStatus.Fail
+        }
+    },
+    {
+        name:"Test 2",
+        year:"2019",
+        img:"/2019.JPG",
+        description:"Did stuff",
+        game:"Do something",
+        badges:[
+            {
+                name:"World's",
+                color:"yellow"
+            }
+        ],
         stage:{
             state:6,
             status:EStatus.Fail
@@ -85,7 +139,7 @@ export default function robots(){
                         : theme.colors.gray[7];
                     return(
                         <div key={value.name} style={{ width: 340, margin: 'auto' }}>
-                            <Card shadow="sm" p="lg">
+                            <Card shadow="sm" p="lg" className='transition ease-in-out hover:scale-110 duration-200'>
                                 <Card.Section>
                                     <Image src={value.img} height={160} alt="Robot" />
                                 </Card.Section>
@@ -108,14 +162,13 @@ export default function robots(){
                                     {value.description}
                                 </Text>
 
-                                <Button variant="light" onClick={() => setOpened(true)} color="blue" fullWidth style={{ marginTop: 14 }}>
+                                <Button variant="light" className='outline outline-1 bg-blue-100 hover:bg-blue-300 hover:text-blue-900' onClick={() => setOpened(true)} color="blue" fullWidth style={{ marginTop: 14 }}>
                                     Learn More
                                 </Button>
                             </Card>
                             <Modal
                                 opened={opened}
                                 onClose={() => setOpened(false)}
-                                title={value.name}
                                 size="55%"
                             >
                                 <div className="flex px-6">
@@ -126,8 +179,6 @@ export default function robots(){
                                         <p>Year: {value.year}</p>
                                         <p>Game: {value.game}</p>
                                         <p>Description: {value.description}</p>
-                                        <p>CAD: <Link href={value.cad}><a className="text-primary underline">Click Here</a></Link></p>
-                                        <p>Code: <Link href={value.git}><a className="text-primary underline">Click Here</a></Link></p>
                                     </div>
                                     <div className="basis-1/2">
                                         <Stepper active={value.stage.state} orientation="vertical">
