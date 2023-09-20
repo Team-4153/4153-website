@@ -186,8 +186,7 @@ export default function SiteHeader(props:IHeaderProps) {
                   </>
                 )}
               </Popover>
-              <Link href="/calendar"><a className="text-base font-medium text-gray-500 hover:text-gray-900">Calendar</a></Link>
-              <Link href="https://www.firstinspires.org/robotics/frc"><a className="text-base font-medium text-gray-500 hover:text-gray-900" target="_blank">FIRST Program Info</a></Link>
+              <Link href="/calendar"><a className="text-base font-medium text-gray-500 hover:text-gray-900">Calendar</a></Link>              
               <Popover className="relative">
                 {({ open }) => (
                   <>
@@ -239,6 +238,7 @@ export default function SiteHeader(props:IHeaderProps) {
                   </>
                 )}
               </Popover>
+              <Link href="https://www.firstinspires.org/robotics/frc"><a className="text-base font-medium text-gray-500 hover:text-gray-900" target="_blank">FIRST Website</a></Link>
             </Popover.Group>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             </div>
