@@ -324,13 +324,13 @@ export default function SiteHeader(props:IHeaderProps) {
             </div>
           </Popover.Panel>
         </Transition>
-        <GithubCorner
-          bannerColor="#12233f"
-          octoColor="#fff"
-          size="120"
-          href="https://github.com/Team-4153"
-          target="_blank"
-        />
+//        <GithubCorner
+//          bannerColor="#12233f"
+//          octoColor="#fff"
+//          size="120"
+//          href="https://github.com/Team-4153"
+//          target="_blank"
+//        />
       </Popover>
       {bannerVis ?
         <div className="bg-gradient-to-r from-cyan-500 to-primary-500 relative">
