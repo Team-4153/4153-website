@@ -14,7 +14,7 @@ const robotsList = [
         year:"2012",
         img:"/2012.JPG",
         description:"Our first robot from 2012",
-        game:"Do something",
+        game:"Rebound Rumble",
         badges:[
         ],
         stage:{
@@ -23,11 +23,11 @@ const robotsList = [
         }
     },
     {
-        name:"Test 1",
+        name:"Bradbury",
         year:"2013",
         img:"/2013.png",
-        description:"Did stuff",
-        game:"Do something",
+        description:"Frisbee launcher",
+        game:"Ultimate Ascent",
         badges:[
             {
                 name:"Chairman's",
@@ -40,11 +40,11 @@ const robotsList = [
         }
     },
     {
-        name:"Test 2",
+        name:"Feynbot",
         year:"2014",
         img:"/2014.png",
-        description:"Did stuff",
-        game:"Do something",
+        description:"Yoga ball launcher",
+        game:"Aerial Assist",
         badges:[
             {
                 name:"World's",
@@ -57,11 +57,11 @@ const robotsList = [
         }
     },
     {
-        name:"Test 2",
+        name:"Fermi",
         year:"2015",
         img:"/2015.png",
-        description:"Did stuff",
-        game:"Do something",
+        description:"Tote stacker",
+        game:"Recycle Rush",
         badges:[
             {
                 name:"World's",
@@ -74,11 +74,11 @@ const robotsList = [
         }
     },
     {
-        name:"Test 2",
+        name:"Szilard",
         year:"2016",
         img:"/2016.JPG",
-        description:"Did stuff",
-        game:"Do something",
+        description:"Rough terrain crosser, ball shooter",
+        game:"Stringhold",
         badges:[
             {
                 name:"World's",
@@ -94,8 +94,8 @@ const robotsList = [
         name:"Test 2",
         year:"2017",
         img:"/2017.JPG",
-        description:"Did stuff",
-        game:"Do something",
+        description:"Wiffle balls thrower, Rope climber",
+        game:"Steamworks",
         badges:[
             {
                 name:"World's",
@@ -112,7 +112,7 @@ const robotsList = [
         year:"2019",
         img:"/2019.JPG",
         description:"Did stuff",
-        game:"Do something",
+        game:"Deep Space",
         badges:[
             {
                 name:"World's",

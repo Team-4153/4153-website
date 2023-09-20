@@ -26,7 +26,7 @@ const solutions = [
   {
     name: 'Past Robots',
     description: 'See our previous and current robots',
-    href: '/not-ready',
+    href: '/robots',
     icon: CursorClickIcon,
   },
   // {
@@ -324,13 +324,13 @@ export default function SiteHeader(props:IHeaderProps) {
             </div>
           </Popover.Panel>
         </Transition>
-        <GithubCorner
+/*        <GithubCorner
           bannerColor="#12233f"
           octoColor="#fff"
           size="120"
           href="https://github.com/Team-4153"
           target="_blank"
-        />
+        />*/
       </Popover>
       {bannerVis ?
         <div className="bg-gradient-to-r from-cyan-500 to-primary-500 relative">
