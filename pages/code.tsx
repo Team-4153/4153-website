@@ -36,7 +36,7 @@ export default function code() {
                   
                   </div>
                   <div className="basis-1/3 px-6 ">
-                    <Image src="/placeholder.png" height="325" width="560" alt="placeholder.png"/>
+                    <Image src="/swerve.jpg" height="325" width="560" alt="swerve.jpg"/>
                   </div>
               </div>
               <p className="text-black uppercase border-t-2 border-b-2 text-primary-600 font-light py-6 text-3xl ">
@@ -44,7 +44,7 @@ export default function code() {
               </p>
               <div className="flex py-6 flex-row mx-60">
                 <div className="basis-1/3 px-6 border-r-2">
-                <Image src="/placeholder.png" height="325" width="560" alt="placeholder.png"/>
+                <Image src="/map.png" height="325" width="560" alt="map.png"/>
                 </div>
                 <div className="basis-2/3 px-6">
                     <p>
@@ -85,7 +85,7 @@ export default function code() {
                 </div>
                   </div>
                   <div className="basis-1/3 px-6 ">
-                    <Image src="/placeholder.png" height="325" width="560" alt="placeholder.png"/>
+                    <Image src="/vision.jpg" height="325" width="560" alt="vision.jpg"/>
                   </div>
               </div>
               </div>
