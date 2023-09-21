@@ -91,7 +91,7 @@ const robotsList = [
         }
     },
     {
-        name:"Test 2",
+        name:"Rsamussen",
         year:"2017",
         img:"/2017.JPG",
         description:"Wiffle balls thrower, Rope climber",
