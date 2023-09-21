@@ -138,7 +138,7 @@ export default function robots(){
                         ? theme.colors.dark[1]
                         : theme.colors.gray[7];
                     return(
-                        <div key={value.name} style={{ width: 20%, margin: 'auto' }}>
+                        <div key={value.name} style={{ width: [20%], margin: 'auto' }}>
                             <Card shadow="sm" p="lg" className='transition ease-in-out hover:scale-110 duration-200'>
                                 <Card.Section>
                                     <Image src={value.img} height={160} alt="Robot" />
